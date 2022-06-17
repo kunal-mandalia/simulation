@@ -12,7 +12,7 @@ def simulate():
     
     birthdays.append(i)
 
-  raise exception('Expectted overlapping birthdays')
+  raise exception('Expected overlapping birthdays')
 
 def main():
   N = 1_000
