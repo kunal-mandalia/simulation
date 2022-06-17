@@ -2,8 +2,8 @@
 function simulate() {
   const birthdays = []
 
-  for (let i = 1; i < 365; i++) {
-    const birthday = Math.ceil(Math.random() * 365) + 1
+  for (let i = 1; i <= 365; i++) {
+    const birthday = Math.floor(Math.random() * 365 + 1)
     if (birthdays.includes(birthday)) {
       return i
     }
@@ -14,7 +14,7 @@ function simulate() {
 }
 
 function main() {
-  const simCount = 1000
+  const simCount = 1_000_000
   const results = new Array(simCount)
     .fill(0)
     .map(simulate)
