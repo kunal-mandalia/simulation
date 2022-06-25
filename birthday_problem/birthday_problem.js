@@ -1,9 +1,20 @@
 // returns # of people until 2 people share birthday
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min)
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max - min) + min) //The maximum is exclusive and the minimum is inclusive
+}
+
+function getRandomBirthday() {
+  return getRandomInt(1, 365)
+}
+
 function simulate() {
   const birthdays = []
 
   for (let i = 1; i <= 365; i++) {
-    const birthday = Math.floor(Math.random() * 365 + 1)
+    const birthday = getRandomBirthday()
     if (birthdays.includes(birthday)) {
       return i
     }
