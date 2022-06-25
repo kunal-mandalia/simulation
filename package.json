@@ -1,0 +1,22 @@
+{
+  "name": "simulation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "b:js": "node ./birthday_problem/birthday_problem.js",
+    "b:py": "python3 ./birthday_problem/birthday_problem.py",
+    "b:r": "R < ./birthday_problem/birthday_problem.r --no-save"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunal-mandalia/simulation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kunal-mandalia/simulation/issues"
+  },
+  "homepage": "https://github.com/kunal-mandalia/simulation#readme"
+}
