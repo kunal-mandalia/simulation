@@ -7,7 +7,7 @@ function getRandomInt(min, max) {
 }
 
 function getRandomBirthday() {
-  return getRandomInt(1, 365)
+  return getRandomInt(1, 366)
 }
 
 function simulate() {
@@ -32,6 +32,6 @@ function main() {
     .sort((a, b) => a - b)
 
   const mean = results.reduce((a, b) => a + b, 0) / results.length
-  console.log({ results, mean })
+  console.log(`mean: ${mean}, N=${simCount}`)
 }
 main()
