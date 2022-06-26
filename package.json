@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "b:js": "node ./birthday_problem/birthday_problem.js",
     "b:py": "python3 ./birthday_problem/birthday_problem.py",
-    "b:r": "R < ./birthday_problem/birthday_problem.r --no-save"
+    "b:r": "R < ./birthday_problem/birthday_problem.r --no-save",
+    "b:c": "rm -f ./birthday_problem/build/birthday_problem_c && gcc -o ./birthday_problem/build/birthday_problem_c ./birthday_problem/birthday_problem.c && ./birthday_problem/build/birthday_problem_c"
   },
   "repository": {
     "type": "git",
